@@ -1,5 +1,5 @@
-# subscribe_user
-API subscribe user
+# subscribe for a new user.
+This API describe how to subcribe for the new user.
 
 ### 1. POST http://hanoi.energisme.net:8081/OcrREST/user/signup
 
