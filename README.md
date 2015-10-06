@@ -1,7 +1,7 @@
 # subscribe_user
 API subscribe user
 
-### 1. POST /OcrREST/user/signup
+### 1. POST http://hanoi.energisme.net:8081/OcrREST/user/signup
 ####    
      <form method="POST" enctype="multipart/form-data"
  		action="http://hanoi.energisme.net:8081/OcrREST/user/signup">
@@ -16,7 +16,7 @@ API subscribe user
 
 ##### Status Code 201
 
-    HTTP/1.1 201 Created
+    HTTP/1.1 200 OK
     Content-Type: application/json; charset=UTF-8
 Response body : 
 
