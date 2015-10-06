@@ -22,7 +22,7 @@ API subscribe user
 --address       Optional
 --clientName    Optional
 ```
-##### Status Code 201
+##### Status Code 200
 
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=UTF-8
@@ -30,7 +30,7 @@ Response body :
 
     {
         "success"         :  true,
-        "message"      :  "An email with a activation link  has been sent to the provided address.",
+        "message"      :  "An email with a activation link has been sent to the provided address.",
         "errorsDetail" : []
     }
 
@@ -41,7 +41,7 @@ Response body :
 
     {
         "success" : false,
-        "message": "",
+        "message": "KO",
         "errorsDetail" : [
               "email" : "the email is required",
               "fileUpload" : "the file upload is required",
@@ -53,7 +53,7 @@ Notes : returns when email or fileU upload is missing.
     HTTP/1.1 403 Forbidden
     {
         "success" : false,
-        "message": "",
+        "message": "KO",
         "errorsDetail" : [
               "email" : "this email is not valid.",
               "fileUpload" : "the upload file is not in the format pdf"
@@ -64,8 +64,10 @@ Notes : return when an email is not valide or a file upload is not in format pdf
     HTTP/1.1 410 Gone
     {
         "success" : false,
-        "message": "The provided email has been used by another user.",
+        "message": "KO",
         "errorsDetail" :[
+         "email" : "this email is not valid.",
+         "other" : "the invariant xyz existed already in the database"
         ]
     }
 Notes : return when an email is used or an invariant existed in database.
