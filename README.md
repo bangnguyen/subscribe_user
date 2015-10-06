@@ -56,7 +56,7 @@ Notes : returns when email or file upload is missing.
         "success" : false,
         "message": "KO",
         "errorsDetail" : [
-              "email" : "this email is not valid.",
+              "email" : "the email is not valid.",
               "fileUpload" : "the upload file is not in the format pdf"
         ]
     }
