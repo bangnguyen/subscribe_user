@@ -17,7 +17,7 @@ This API describe how to subcribe for the new user.
 ###Parameters : form-data
 ```
 --email         Required
---fileUpload         Required
+--fileUpload    Required
 --login         Optional
 --phone         Optional
 --address       Optional
