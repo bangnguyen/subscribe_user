@@ -67,7 +67,7 @@ Notes : return when an email is not valide or a file upload is not in format pdf
         "success" : false,
         "message": "KO",
         "errorsDetail" :[
-         "email" : "this email is not valid.",
+         "email" : "the email joe@yahoo.com existed already in the system.",
          "other" : "the invariant xyz existed already in the database"
         ]
     }
