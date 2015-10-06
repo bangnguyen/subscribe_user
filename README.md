@@ -52,6 +52,9 @@ Notes : returns when email or file upload is missing.
 
 ##### Status Code 403
     HTTP/1.1 403 Forbidden
+    Content-Type: application/json; charset=UTF-8
+    
+Response body : 
     {
         "success" : false,
         "message": "KO",
@@ -62,7 +65,10 @@ Notes : returns when email or file upload is missing.
     }
 Notes : return when an email is not valide or a file upload is not in format pdf.
 ##### Status Code 409
-    HTTP/1.1 410 Gone
+    HTTP/1.1 410 Forbidden
+    Content-Type: application/json; charset=UTF-8
+Response body : 
+    
     {
         "success" : false,
         "message": "KO",
