@@ -5,36 +5,48 @@ api subscribe user
 
 See [conventions](../conventions.md) for some common conventions of writing Balloon REST API specs.
 
-### 1. POST /users
+### 1. POST /OcrREST/user/signup
+####    
+     <form method="POST" enctype="multipart/form-data"
+ 		action="http://hanoi.energisme.net:8081/OcrREST/user/signup">
+		File to upload: <input type="file" name="fileUpload"><br /> 
+		Email: <input type="text" name="email"><br /> 
+		Login: <input type="text" name="login"><br />
+		Phone: <input type="text" name="phone"><br /> 
+		Address: <input type="text" name="address"><br /> 
+		Client: <input type="text" name="clientName"><br /> 
+		<input type="submit" value="Upload"> Press here to upload the file!
+	</form>
 
-#### Request 
-
-    POST /users
+    POST /OcrREST/user/signup
     
     {
-        "username"     : "joe",
-        "email"        : "joe@example.com",
+        "email"        : "david@example.com",
+        "login"        : "david",
+        "phone"        : "01 48 29 72 80",
+        "address"      : "11 bis avenue mac mahon 75017 Paris", 
+        "clientName"   : "Paris 75017", 
+        "input "
     }
 
-#### Response
 
 ##### Status Code 201
 
     HTTP/1.1 201 Created
-    Content-Location: https://www.balloon.com/api/v1/users/joe
     Content-Type: application/json; charset=UTF-8
+Response
 
-    {See Response Body for Section 4}
+    {
+        "status"       : "OK",
+        "message"      :  "Activation email is sent to the email david@example.com"
+    }
 
 ##### Status Code 411
-
     HTTP/1.1 411 Length Required
-    Content-Location: https://www.balloon.com/api/v1/users
     Content-Type: application/json; charset=UTF-8
-    
     {
         "message" : "Required parameter is missing",
-        "require" : ["email"]
+        "require" : ["email",""]
     }
 
 Some required field is missing, or null.
