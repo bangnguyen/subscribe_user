@@ -2,6 +2,7 @@
 API subscribe user
 
 ### 1. POST http://hanoi.energisme.net:8081/OcrREST/user/signup
+
 ####    
      <form method="POST" enctype="multipart/form-data"
  		action="http://hanoi.energisme.net:8081/OcrREST/user/signup">
@@ -13,7 +14,14 @@ API subscribe user
 		Client: <input type="text" name="clientName"><br /> 
 		<input type="submit" value="Upload"> Press here to upload the file!
 	</form>
-
+###Parameters : form-data
+```
+--email         Required
+--login         Required
+--phone         Optional
+--address       Optional
+--clientName    Optional
+```
 ##### Status Code 201
 
     HTTP/1.1 200 OK
