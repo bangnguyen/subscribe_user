@@ -47,7 +47,7 @@ Response body :
               "fileUpload" : "the file upload is required",
         ]
     }
-Notes : returns when email or fileU upload is missing.
+Notes : returns when email or file upload is missing.
 
 ##### Status Code 403
     HTTP/1.1 403 Forbidden
