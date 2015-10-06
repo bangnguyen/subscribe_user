@@ -67,8 +67,8 @@ Notes : return when an email is not valide or a file upload is not in format pdf
         "success" : false,
         "message": "KO",
         "errorsDetail" :[
-         "email" : "the email joe@yahoo.com existed already in the system.",
-         "other" : "the invariant xyz existed already in the database"
+         "email" :     "the email joe@yahoo.com existed already in the database.",
+         "invariant" : "the invariant xyz extracted from the invoice existed already in the database"
         ]
     }
 Notes : return when an email is used or an invariant existed in database.
