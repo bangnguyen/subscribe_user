@@ -61,10 +61,11 @@ Notes : returns when email or fileU upload is missing.
     }
 Notes : return when an email is not valide or a file upload is not in format pdf.
 ##### Status Code 409
-
     HTTP/1.1 410 Gone
     {
         "success" : false,
         "message": "The provided email has been used by another user.",
-        "errorsDetail" :[]
+        "errorsDetail" :[
+        ]
     }
+Notes : return when an email is used or an invariant existed in database.
