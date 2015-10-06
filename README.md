@@ -1,11 +1,11 @@
 # subscribe for a new user.
 This API describe how to subcribe for the new user.
 
-### 1. POST http://hanoi.energisme.net:8081/OcrREST/user/signup
+### 1. POST {hostname}/OcrREST/user/signup
 
 ####    
      <form method="POST" enctype="multipart/form-data"
- 		action="http://hanoi.energisme.net:8081/OcrREST/user/signup">
+ 		action="{hostname}/OcrREST/user/signup">
 		File to upload: <input type="file" name="fileUpload"><br /> 
 		Email: <input type="text" name="email"><br /> 
 		Login: <input type="text" name="login"><br />
